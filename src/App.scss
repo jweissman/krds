@@ -1,0 +1,23 @@
+@import 'style/Palette';
+@import 'style/Kryptonite';
+
+// app style tile
+$app-bg: $primary-dark;
+$app-fg: $white;
+$app-font-stack: $font-stack;
+$app-body-font-size: $body-font-size;
+
+///////////////////////////////////////////////////////
+
+.App {
+  text-align: center;
+  background: $app-bg;
+  color: $app-fg;
+  height: 100vh;
+  font-family: $app-font-stack;
+  font-size: $app-body-font-size;
+}
+
+.App-header {
+  font-size: $title-font-size;
+}

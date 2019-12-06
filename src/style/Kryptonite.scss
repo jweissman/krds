@@ -1,0 +1,53 @@
+@import 'style/Palette';
+@import 'style/Units';
+
+// typography
+$font-stack: Helvetica, Arial, "Times New Roman", Times, serif;
+$title-font-size: 18pt;
+$body-font-size: 5pt;
+$small-button-font-size: 10pt;
+$card-title-font-size: 11pt;
+$card-body-font-size: 10pt;
+
+/////////////////////////////////////////////////////////////
+
+// brand kernel
+$info: $blue;
+$info-light: lighten($info, 40%);
+$primary: $red;
+$primary-dark: darken($primary, 20%);
+$primary-light: lighten($primary, 20%);
+$primary-lighter: lighten($primary, 40%);
+
+/// kryptonite component styles
+
+.Button {
+  background-color: $info;
+  color: $white;
+  border-radius: 2px;
+}
+
+.Button--primary {
+  background-color: $primary;
+}
+
+.Button--large {
+  min-width: $major-eighth;
+  min-height: $major-third;
+  border-radius: $major-first;
+}
+
+.Card {
+  background-color: white;
+  border: 2px solid gray;
+  padding: 10px;
+  margin: 2px;
+  color: black;
+
+  .Card-title {
+      font-size: $card-title-font-size;
+  }
+  .Card-body {
+      font-size: $card-body-font-size;
+  }
+}
